@@ -28,7 +28,12 @@ end do
     close(10)
     call SHExpandDH(grid,180,cilm,lmax,sampling=2)
     print *,'lmax for expansion ',lmax
-    print *,cilm
+    do l = 1,5,1
+        print *, 'The coeffeceients corresponding to l=',l-1,'are'
+        do k = 1,l,1
+            print *,cilm(1,l,k),cilm(2,l,k)
+        end do
+    end do
 
 
 end program main
