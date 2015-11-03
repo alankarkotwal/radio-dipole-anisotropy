@@ -16,7 +16,7 @@ end do
 open(10,file='catalog')
 do while(1 == 1)
     read(10,*,END=200) x,y,z
-    i = floor(y)+91
+    i = 90-floor(y)
     j = floor(x)+1
     if (z.gt.flux_thresh) then
         grid(i,j) = grid(i,j) + 1
