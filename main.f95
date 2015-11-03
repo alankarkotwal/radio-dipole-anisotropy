@@ -51,8 +51,8 @@ end do
     cilm2(2,2,2)= cilm(2,2,2)
     lmax = 89
     call MakeGrid2D(grid2, cilm2, lmax, 1.0d0,nlat,nlong)
-    print *,'maximum at ',maxloc(grid2)
-    print *,'minimum at ',minloc(grid2)
+    print *,'maximum at ',maxloc(grid2),' with value ',maxval(grid2)
+    print *,'minimum at ',minloc(grid2),' with value ',minval(grid2)
 
 
 end program main
