@@ -27,7 +27,7 @@ do while(1 == 1)
     read(10,*,END=200) x,y,z
     i = 90-floor(y)
     j = floor(x)+1
-    if (z.gt.flux_thresh) then
+    if (z.gt.flux_thresh.and.floor(y).lt.40) then
         grid(i,j) = grid(i,j) + 1
     endif
 end do
