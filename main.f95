@@ -34,6 +34,15 @@ end do
 
 200 CONTINUE
     !print *,grid
+    open(11,file='out_grid')
+
+    do i = 1,181,1
+        do j = 1,361,1
+            write(11,*) grid(i,j)
+        end do
+    end do
+    close(11)
+
     print *,'Read and process done!'
     close(10)
     call SHExpandDH(grid,180,cilm,lmax,sampling=2)
