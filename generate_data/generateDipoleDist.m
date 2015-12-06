@@ -1,4 +1,4 @@
-function [map, lat, lon] = generateDipoleDist(theta, phi, vel, sourceCountExp, spectralIdx, baseline)
+function [map, lat, lon] = generateDipoleDist(theta, phi, vel, sourceCountExp, spectralIdx, baseline, res)
 
     % Generate a distribution of radio sources with parameters co-latitude
     % theta and longitude phi, moveing with velocity vel. Usually, 
@@ -7,7 +7,7 @@ function [map, lat, lon] = generateDipoleDist(theta, phi, vel, sourceCountExp, s
     
     % Create the dipole
     myDip = SHCreateYVec(2, phi, theta, 'deg');
-    [map, lon, lat] = SHMapToGrid(myDip, 10);
+    [map, lon, lat] = SHMapToGrid(myDip, res);
     
     % Get fluctuation level
     delta = 2*vel*(2+sourceCountExp*(1+spectralIdx))/300000000;
@@ -24,6 +24,6 @@ function [map, lat, lon] = generateDipoleDist(theta, phi, vel, sourceCountExp, s
     map = a(1)*map + a(2);
     
     % Visualise the resulting map
-    pcolor(lon, lat, map); shading interp; cb=colorbar;
+    %pcolor(lon, lat, map); shading interp; cb=colorbar;
 
 end
