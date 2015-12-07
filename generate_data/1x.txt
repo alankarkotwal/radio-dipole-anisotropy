@@ -1,0 +1,60 @@
+ Iteration   Func-count     min f(x)         Procedure
+     0            1          2.31003         
+     1            4          2.31001         initial simplex
+     2            6          2.30999         expand
+     3            8          2.30996         expand
+     4           10          2.30993         expand
+     5           12          2.30987         expand
+     6           14          2.30977         expand
+     7           16          2.30964         expand
+     8           18          2.30934         expand
+     9           20            2.309         expand
+    10           22          2.30836         expand
+    11           24          2.30828         reflect
+    12           26          2.30812         reflect
+    13           28          2.30811         reflect
+    14           30          2.30811         contract inside
+    15           32          2.30802         reflect
+    16           34           2.3079         reflect
+    17           36          2.30786         reflect
+    18           38          2.30786         contract inside
+    19           40          2.30786         contract outside
+    20           42          2.30772         expand
+    21           44          2.30772         contract inside
+    22           45          2.30772         reflect
+    23           47          2.30772         contract inside
+    24           49          2.30763         expand
+    25           50          2.30763         reflect
+    26           51          2.30763         reflect
+    27           52          2.30763         reflect
+    28           54          2.30758         reflect
+    29           56          2.30752         expand
+    30           57          2.30752         reflect
+    31           58          2.30752         reflect
+    32           59          2.30752         reflect
+    33           61          2.30745         expand
+    34           62          2.30745         reflect
+    35           64          2.30743         reflect
+    36           65          2.30743         reflect
+    37           67          2.30743         contract inside
+    38           69          2.30743         contract inside
+    39           71          2.30743         contract inside
+    40           72          2.30743         reflect
+    41           74          2.30743         contract inside
+    42           76          2.30743         contract outside
+    43           78          2.30743         reflect
+    44           79          2.30743         reflect
+    45           81          2.30743         contract inside
+    46           82          2.30743         reflect
+    47           84          2.30743         contract inside
+    48           86          2.30743         contract inside
+    49           88          2.30743         contract inside
+    50           90          2.30743         contract inside
+    51           92          2.30743         contract outside
+    52           94          2.30743         contract inside
+    53           99          2.30743         shrink
+    54          101          2.30743         contract outside
+    55          103          2.30743         contract inside
+    56          105          2.30743         contract inside
+    57          107          2.30743         contract inside
+    58          109          2.30743         contract inside

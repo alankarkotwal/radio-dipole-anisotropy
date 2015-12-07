@@ -1,7 +1,7 @@
 % Params
 theta = 33;
 phi = 78;
-vel = 370000;
+vel = 4*370000;
 base = 5.4;
 thresh = 0.15;
 
@@ -22,7 +22,7 @@ stdev = sqrt(var(mapRed));
 
 % Get error
 optimFn = @(x) calcFitError(map, x(1), x(2), x(3), base, mask);
-[x, fval] = fminsearch(optimFn, [theta, phi, vel]);
+[x, fval] = fminsearch(optimFn, [theta, phi, vel], optimset('Display', 'iter', 'MaxIter', 100));
 
 chiSq = fval/stdev;
 disp(strcat('Chi Squared=', num2str(chiSq)));
